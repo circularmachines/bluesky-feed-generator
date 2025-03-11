@@ -71,7 +71,7 @@ def operations_callback(ops: defaultdict) -> None:
             continue
 
         # only python-related posts
-        if 'python' in record.text.lower():
+        if 'smart' in record.text.lower():
             reply_root = reply_parent = None
             if record.reply:
                 reply_root = record.reply.root.uri
